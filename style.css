@@ -93,9 +93,9 @@ body{
 .hero{
     position: relative;
     height:100vh;
-    background:
+    background-image:
     linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
-    url("../images/hero.jpg");
+    url("images/hero.jpg");
 
     background-size:cover;
     background-position:center center;
@@ -732,4 +732,7 @@ footer p{
     height:100px;
     border-radius:50%;
     object-fit:cover;
+}
+body{
+    background: red !important;
 }
