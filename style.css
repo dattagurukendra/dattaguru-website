@@ -583,7 +583,6 @@ footer p{
         display:block;
     }
 
-    .nav-links,
     .buttons{
         display:none;
     }
@@ -780,7 +779,8 @@ footer p{
 
 .whatsapp-float img:hover{
     transform: scale(1.1);
-    floating-call img:hover{
+}
+.floating-call img:hover{
     transform: scale(1.1);
     transition: 0.3s ease;
 }
