@@ -257,48 +257,54 @@ body{
 }
 /* ===== SERVICES ===== */
 
-.services{
-    padding:90px 10%;
-    background:#ffffff;
-    text-align:center;
+.services {
+    padding: 50px 5%;
+    text-align: center;
 }
 
-.services h2{
-    font-size:40px;
-    color:#FF6F00;
-    margin-bottom:50px;
+.services h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
 }
 
-.service-container{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:30px;
+/* 5 cards in one row */
+.service-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 18px;
+    max-width: 1200px;
+    margin: auto;
 }
 
-.service-card{
-    background:#FFF8E1;
-    padding:35px 25px;
-    border-radius:20px;
-    box-shadow:0 8px 20px rgba(0,0,0,0.1);
-    transition:0.3s ease;
-    cursor:pointer;
+/* Small service cards */
+.service-card {
+    background: #fffdf0;
+    padding: 18px 12px;
+    border-radius: 15px;
+    text-align: center;
+    min-height: 125px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
+    transition: 0.3s;
 }
 
-.service-card:hover{
-    transform:translateY(-10px);
-    box-shadow:0 15px 30px rgba(0,0,0,0.2);
+/* Service icon */
+.service-card h3 {
+    font-size: 17px;
+    margin: 0 0 8px;
 }
 
-.service-card h3{
-    font-size:24px;
-    color:#4E342E;
-    margin-bottom:15px;
+/* Service description */
+.service-card p {
+    font-size: 13px;
+    line-height: 1.4;
+    margin: 0;
+    color: #555;
 }
 
-.service-card p{
-    font-size:17px;
-    color:#666;
-    line-height:1.6;
+/* Hover effect */
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
 }
 /* ===== WHY CHOOSE US ===== */
 
@@ -759,26 +765,22 @@ footer p{
     position: fixed;
     bottom: 20px;
     right: 20px;
-    z-index: 9999;
+    width: 65px;
+    height: 65px;
+    z-index: 999;
 }
 
 .whatsapp-float img{
-    width: 65px;
-    height: 65px;
+    width: 100%;
+    height: 100%;
     border-radius: 50%;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-    transition: transform 0.3s;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    transition: 0.3s;
 }
 
-.whatsapp-float:hover img{
+.whatsapp-float img:hover{
     transform: scale(1.1);
-}.whatsapp-float img,
-.floating-call img{
-    width: 65px;
-    height: 65px;
-}
-.whatsapp-float img:hover,
-.floating-call img:hover{
+    floating-call img:hover{
     transform: scale(1.1);
     transition: 0.3s ease;
 }
@@ -803,4 +805,31 @@ footer p{
     font-size: 16px;
     margin-top: -15px;
     margin-bottom: 35px;
+}
+/* Tablet */
+@media (max-width: 1000px) {
+    .service-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .service-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .service-card {
+        padding: 15px 8px;
+        min-height: 115px;
+    }
+
+    .service-card h3 {
+        font-size: 15px;
+    }
+
+    .service-card p {
+        font-size: 12px;
+    }
 }
