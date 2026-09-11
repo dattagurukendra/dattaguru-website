@@ -833,3 +833,129 @@ footer p{
         font-size: 12px;
     }
 }
+/* ============================= */
+/* PUJA SECTIONS */
+/* ============================= */
+
+.puja-section {
+  padding: 30px 5%;
+  background: #fffaf3;
+}
+
+.puja-section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* 2 x 2 main layout */
+.puja-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+/* Each box */
+.puja-box {
+  background: #ffffff;
+  padding: 14px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.puja-box h3 {
+  text-align: center;
+  margin: 0 0 10px;
+  font-size: 17px;
+}
+
+/* Items inside each box */
+.items-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 12px;
+}
+
+.puja-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 4px;
+  min-height: 27px;
+  border-bottom: 1px solid #eeeeee;
+  font-size: 13px;
+}
+
+.puja-item b {
+  white-space: nowrap;
+  margin-left: 5px;
+}
+
+/* Preparation */
+.preparation-list {
+  margin: 0;
+  padding-left: 22px;
+}
+
+.preparation-list li {
+  padding: 4px 0;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+/* Video button */
+.puja-video {
+  display: block;
+  width: fit-content;
+  margin: 12px auto 0;
+  padding: 7px 12px;
+  background: #d35400;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+/* ============================= */
+/* MOBILE */
+/* ============================= */
+
+@media (max-width: 700px) {
+
+  .puja-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .items-grid {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 8px;
+  }
+
+  .puja-item {
+    font-size: 12px;
+    padding: 5px 3px;
+  }
+
+  .puja-box h3 {
+    font-size: 15px;
+  }
+}.puja-video-center {
+  grid-column: 1 / -1;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.puja-video-center a {
+  display: inline-block;
+  padding: 9px 18px;
+  background: #d35400;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.puja-video-center a:hover {
+  opacity: 0.85;
+}
